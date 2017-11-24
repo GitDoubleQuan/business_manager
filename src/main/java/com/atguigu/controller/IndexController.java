@@ -12,7 +12,7 @@ public class IndexController {
 
     //dev
     //git pull
-    //test push
+    //test push dev
     //测试上游分支
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
