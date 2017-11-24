@@ -12,6 +12,7 @@ public class IndexController {
 
     //dev
     //git pull
+    //test push
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
