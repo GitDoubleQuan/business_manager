@@ -12,6 +12,7 @@ public class IndexController {
 
 
     //测试分支合并
+    //dev
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
