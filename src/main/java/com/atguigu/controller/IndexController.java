@@ -14,6 +14,7 @@ public class IndexController {
     //git pull
     //test push22222zhangsan
     //测试上游分支
+    //pull
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
