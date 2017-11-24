@@ -16,6 +16,7 @@ public class IndexController {
     //测试上游分支
     //push 冲突
     //王五
+    //master
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
