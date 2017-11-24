@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
 
+    //测试分支合并
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
