@@ -6,7 +6,7 @@
     <!--全局配置-->
     <settings>
         <!--驼峰命名-->
-        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--<setting name="mapUnderscoreToCamelCase" value="true"/>-->
         <!--自动映射-->
         <setting name="autoMappingBehavior" value="PARTIAL"/>
         <!--懒加载-->
