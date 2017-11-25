@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-    //dev
-    //git pull
-    //test push dev
-    //测试上游分支
     @RequestMapping("index")
     public String index(ModelMap map, String url, String title, String success) {
         map.put("url", url);
