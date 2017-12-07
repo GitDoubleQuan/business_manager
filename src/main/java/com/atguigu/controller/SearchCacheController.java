@@ -3,6 +3,7 @@ package com.atguigu.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.atguigu.bean.OBJECT_T_MALL_KEYWORDS_SKU;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,8 +52,8 @@ public class SearchCacheController {
 				List<OBJECT_T_MALL_CLASS_SKU> list_sku = searchServiceInf.get_search_attr("", class_2_id,
 						list_attr_value);
 				// 循环sku，刷新reids
-				MyCacheUtil.refresh_redis_key(key, list_sku);
-				count = count + list_sku.size();
+				int refresh_count = MyCacheUtil.refresh_redis_key(key, list_sku);
+				count = count + refresh_count;
 			}
 		}
 
@@ -67,7 +68,7 @@ public class SearchCacheController {
 		String key = "class_2_" + class_2_id;
 
 		// 根据二级分类的id查询sku商品集合，value
-		List<OBJECT_T_MALL_CLASS_SKU> list_sku = searchServiceInf.get_search_class(class_2_id);
+		List<OBJECT_T_MALL_KEYWORDS_SKU> list_sku = searchServiceInf.get_search_class(class_2_id);
 
 		// 将key和value保存在redis的集合中
 		int count = MyCacheUtil.refresh_redis_key(key, list_sku);

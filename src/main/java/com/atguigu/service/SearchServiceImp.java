@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.atguigu.bean.OBJECT_T_MALL_KEYWORDS_SKU;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,8 @@ public class SearchServiceImp implements SearchServiceInf {
 	@Autowired
 	SearchMapper searchMapper;
 
-	public List<OBJECT_T_MALL_CLASS_SKU> get_search_class(int class_2_id) {
-		List<OBJECT_T_MALL_CLASS_SKU> list_sku = searchMapper.select_class_search(class_2_id);
+	public List<OBJECT_T_MALL_KEYWORDS_SKU> get_search_class(int class_2_id) {
+		List<OBJECT_T_MALL_KEYWORDS_SKU> list_sku = searchMapper.select_class_search(class_2_id);
 		return list_sku;
 	}
 
