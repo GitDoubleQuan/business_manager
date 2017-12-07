@@ -80,6 +80,20 @@
             </ul>
         </div>
     </div>
+    <div class="easyui-accordion">
+        <div title="检索管理" data-options="iconCls:'icon-ok'" >
+            <ul class="easyui-tree">
+                <li>
+                    <span>缓存管理</span>
+                    <ul>
+                        <li>
+                            <a href="javascript:add_tabs('goto_search_cache.do','商品检索缓存');" >商品检索缓存</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
 <div data-options="region:'south',border:false" style="height:50px;background:#A9FACD;padding:10px;">south region</div>

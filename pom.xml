@@ -8,6 +8,12 @@
   <name>business_manager</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!--solr-->
+    <dependency>
+      <groupId>org.apache.solr</groupId>
+      <artifactId>solr-solrj</artifactId>
+      <version>4.10.1</version>
+    </dependency>
     <!-- 1.连接池 -->
     <dependency>
       <groupId>mysql</groupId>
